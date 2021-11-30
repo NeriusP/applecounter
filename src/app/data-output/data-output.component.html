@@ -1,0 +1,19 @@
+<div class="row" >
+    <!-- <div class="col-md-3"></div> -->
+    <div class="col-md-12" >
+        <div class="card mt-5 mx-auto">
+            <div class="card-header">Skaičiuoklės rezultatas</div>
+            <div class="card-body">
+                <div class="mb-3">
+                   <h3>Per duotą laiką 
+                        <span>{{data.t}} s</span>,<br>kai vienam obuoliui skirta 
+                        <span>{{data.x}} s</span> laiko,<br>galima apdoroti obuolių:
+                        <span>{{apples}} vnt.</span> <br>
+                        <div *ngIf="timeLeft > 0">Apdorojus obuolius Jums liko laiko: <span>{{timeLeft}} s</span></div> 
+                   </h3>
+                </div>
+               <button class="btn btn-success mb-3" (click)="backToInput()">Skaičiuoti dar kartą</button>
+          </div>
+        </div>
+    </div>
+  </div>

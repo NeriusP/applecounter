@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'applecounter';
+  transferedTimes: { x: number, t: number }; // į data-output komponentą perduodami duomenys
+  displayInput: boolean = true; // nurodo, kuris komponentas bus rodomas
 }
